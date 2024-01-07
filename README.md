@@ -2,11 +2,12 @@
 
 Website tugas sekolah untuk uji kelayakan PKL 
 
-<h2 id="fitur">🤨 What features are available in Confess?</h2>
+<h2 id="fitur">🧐 Fitur apa saja yang ada di website pengelolaan surat ini?</h2>
 
 -   [Dashboard Admin LTE](https://adminlte.io/)
     -   Dashboard UI
 -   Landing Page
+    -   Halaman Login
     -   Dashboard
     -   Data Staff Tata Usaha
     -   Data Guru
@@ -14,19 +15,20 @@ Website tugas sekolah untuk uji kelayakan PKL
     -   Data Surat
 -   Authentication
     -   Login
+    -   Logout
 -   Multi User
     -   Staff TU
-        -   Mengelola user (Staff TU dan Guru)
+        -   Mengelola user (Staff TU dan Guru (CRUD))
         -   Mengelola data klasifikasi surat (CRUD)
         -   Mengelola data surat (CRUD)
-    -   Officer
+    -   Guru
         -   Membuat data hasil rapat
 -   Cari Data
 -   Export PDF
 -   Export Excel
 
 
-<h2 id="installation">💻 Installation</h2>
+<h2 id="installation">💻 Instalasi</h2>
 
 1. Clone repository
 
@@ -58,7 +60,7 @@ php artisan migrate --seed
 php artisan serve
 ```
 
-<h2 id="testing-account">👤 Default account for testing</h2>
+<h2 id="testing-account">👤 Akun default untuk testing</h2>
 
 ### 🧖 Staff Tata Usaha
 
