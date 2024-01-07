@@ -2,8 +2,8 @@
 
 Website tugas sekolah untuk uji kelayakan PKL 
 
-<!-- <h2>🧐 Fitur apa saja yang ada di website blog ini</h2>
--   [Dashboard Bootstrap Template](https://getbootstrap.com/docs/5.0/examples/dashboard/)
+<h2 id="fitur">🧐 Fitur apa saja yang ada di website blog ini</h2>
+-   [Dashboard Admin LTE](https://adminlte.io/)
     -   Dashboard UI
     -   Dark and light mode
 -   Landing Page
@@ -25,7 +25,8 @@ Website tugas sekolah untuk uji kelayakan PKL
 -   Cari data user
     -   Judul blog
     -   Blog berdasarkan kategori
- -->
+
+
 <h2 id="installation">💻 Installation</h2>
 
 1. Clone repository
