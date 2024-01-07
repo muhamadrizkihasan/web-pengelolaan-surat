@@ -66,7 +66,7 @@ class LetterController extends Controller
             'notulis' => $request->notulis
         ]);
 
-        return redirect()->route('letter.cetak')->with('success', 'Berhasil Menambah Data');
+        return redirect()->route('letter.cetak')->with('success', 'Berhasil Menambah Data Surat');
     }
 
     /**

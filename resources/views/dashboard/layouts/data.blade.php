@@ -73,6 +73,10 @@
         @if (Session::get('success'))
             <div class="alert alert-primary d-flex justify-content-center">{{ Session::get('success') }}</div>
         @endif
+        
+        @if (Session::get('edited'))
+            <div class="alert alert-success d-flex justify-content-center">{{ Session::get('edited') }}</div>
+        @endif
 
         @if (Session::get('deleted'))
             <div class="alert alert-danger d-flex justify-content-center">{{ Session::get('deleted') }}</div>

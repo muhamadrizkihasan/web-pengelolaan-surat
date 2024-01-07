@@ -60,7 +60,7 @@
                                             <td>
                                                 {{ implode(", ", array_column($letter->recipients, 'name')) }}
                                             </td>
-                                            <td>{{ $letter->user->name }}</td>
+                                            <td>{{ $letter->notulis }}</td>
                                             <td>
                                                 @if (Auth::check())
                                                     @if (App\Models\Result::where('letter_id', $letter->id)->exists())

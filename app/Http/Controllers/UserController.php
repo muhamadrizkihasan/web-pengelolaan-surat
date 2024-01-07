@@ -68,7 +68,7 @@ class UserController extends Controller
             'password' => $hashedPassword,
         ]);
 
-        return redirect()->route('staff.index')->with('success', 'Berhasil mengubah data staff!');
+        return redirect()->route('staff.index')->with('edited', 'Berhasil mengubah data staff!');
     }
 
     public function destroyStaff($id)
