@@ -114,7 +114,38 @@ class LetterController extends Controller
      */
     public function update(Request $request, Letter $letter)
     {
-        //
+        $recipients = $request->recipients ?? [];
+    
+        $arrayDistinct = array_count_values($recipients);
+        $arrayAssoc = [];
+    
+        foreach ($arrayDistinct as $userId => $count) {
+            $user = User::find($userId);
+    
+            // Periksa apakah pengguna ditemukan sebelum mengakses properti 'name'
+            if ($user) {
+                $arrayItem = [
+                    "id" => $userId,
+                    "name" => $user->name,
+                ];
+    
+                array_push($arrayAssoc, $arrayItem);
+            }
+        }
+    
+        $request['recipients'] = $arrayAssoc;
+    
+        // Update data surat dengan data baru
+        $letter->where('id', $id)->update([
+            'letter_perihal' => $request->letter_perihal,
+            'letter_type_id' => $request->letter_type_id,
+            'content' => $request->content,
+            'recipients' => $request->recipients,
+            'attachment' => $request->attachment,
+            'notulis' => $request->notulis
+        ]);
+    
+        return redirect()->route('dashboard.letter.index')->with('edited', 'Berhasil Mengubah Data');
     }
 
     /**

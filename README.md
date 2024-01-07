@@ -1,4 +1,4 @@
-<h2>Website Pengelolaan Surat</h2>
+<h2>Website Pengelolaan Surat ✉️</h2>
 
 Website tugas sekolah untuk uji kelayakan PKL 
 

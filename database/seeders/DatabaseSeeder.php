@@ -24,13 +24,13 @@ class DatabaseSeeder extends Seeder
             'role' => 'staff',
         ]);
 
-        User::create([
-            'name' => 'Hasan',
-            'email' => 'hasan@gmail.com',
-            // hash : enkripsi agar password tersimpan berisi teks acak agar tidak bisa diprediksi / dibaca orang lain
-            // Selain hash ada juga (bcrypt)
-            'password' => Hash::make('guru'),
-            'role' => 'guru',
-        ]);
+        // User::create([
+        //     'name' => 'Hasan',
+        //     'email' => 'hasan@gmail.com',
+        //     // hash : enkripsi agar password tersimpan berisi teks acak agar tidak bisa diprediksi / dibaca orang lain
+        //     // Selain hash ada juga (bcrypt)
+        //     'password' => Hash::make('guru'),
+        //     'role' => 'guru',
+        // ]);
     }
 }

@@ -27,14 +27,15 @@ class LetterExport implements FromCollection, WithHeadings, WithMapping
     public function map($item) : array
     {
         $content = strip_tags($item->content);
+        $recipient = implode(", ", array_column($item->recipients, 'name'));
 
         return [
             $item->id,
             $item->letter_type_id,
             $item->letter_perihal,
             $item->created_at,
-            $item->recipients,
-            $item->user->name,
+            $recipient,
+            'Pak Hasan',
             $content,
         ];
     }

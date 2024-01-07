@@ -72,4 +72,9 @@
             </div>
         </div>
     </div>
+    <div class="d-flex justify-content-end">
+        @if ($users->count())
+                {{ $users->links() }}
+        @endif
+    </div>
 @endsection

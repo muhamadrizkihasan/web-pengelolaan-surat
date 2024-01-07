@@ -102,7 +102,7 @@
     <div class="form">
     <h1>SMK WIKRAMA BOGOR</h1>
     
-    <img src="{{ asset('wk.png') }}" alt="">
+    {{-- <img src="{{ asset('wk.png') }}" alt=""> --}}
     <div class="bungkus">
     <div class="kanan">
     <p>Bisnis dan Manajemen</p>

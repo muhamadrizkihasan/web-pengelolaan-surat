@@ -139,7 +139,11 @@
     </style>
 </head>
 <body>
+    <p><a href="{{ route('dashboard') }}">Home</a> / <a href="{{ route('letter.index') }}">Data Surat</a> / <a href="#">Detail Data Surat</a></p>
+
     <div class="form">
+    <img src="{{ asset('wk.png') }}" alt="">
+
     <h1>SMK WIKRAMA BOGOR</h1>
     
     <div class="bungkus">

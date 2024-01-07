@@ -88,8 +88,8 @@ class UserController extends Controller
     
     public function indexGuru()
     {
-        $users = User::where('role', 'guru')->get();
-        $entriesPerPage = request('entries', 5); // Default to 5 entries per page if not specified
+        $users = User::where('role', 'guru')->simplePaginate('5');
+        $entriesPerPage = request('entries', 5); 
         $entries = User::paginate($entriesPerPage);
 
         return view('dashboard.guru.index', compact('users', 'entries'));

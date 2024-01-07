@@ -34,7 +34,28 @@ class ResultController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $arrayDistinct = array_count_values($request->presence_recipients);
+        $arrayAssoc = [];
+
+        foreach ($arrayDistinct as $id => $count) {
+            $user = User::find($id);
+
+            // Periksa apakah pengguna ditemukan sebelum mengakses properti 'name'
+            if ($user) {
+                $arrayItem = [
+                    "id" => $id,
+                    "name" => $user->name,
+                ];
+
+                array_push($arrayAssoc, $arrayItem);
+            }
+        }
+
+        $request['presence_recipients'] = $arrayAssoc;
+
+        Result::create($request->all());
+
+        return redirect()->route('dashboard.letter.index')->with('success', 'Berhasil Menambah Hasil Rapat!');
     }
 
     /**

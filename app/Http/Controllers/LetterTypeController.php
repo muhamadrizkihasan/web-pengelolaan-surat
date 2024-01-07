@@ -45,7 +45,7 @@ class LetterTypeController extends Controller
             'name_type'  => $request->klasifikasi,
         ]);
 
-        return redirect()->route('klasifikasi.index')->with('success', 'Berhasil menambahkan data');
+        return redirect()->route('klasifikasi.index')->with('success', 'Berhasil menambahkan data klasifikasi surat!');
     }
 
     /**
@@ -84,7 +84,7 @@ class LetterTypeController extends Controller
             'name_type'  => $request->type,
         ]);
 
-        return redirect()->route('klasifikasi.index')->with('success', 'Berhasil mengubah klasifikasi surat!');
+        return redirect()->route('klasifikasi.index')->with('edited', 'Berhasil mengubah klasifikasi surat!');
     }
 
     /**

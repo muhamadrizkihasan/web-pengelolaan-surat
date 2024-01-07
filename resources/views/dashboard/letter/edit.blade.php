@@ -11,6 +11,7 @@
         <div class="card-body">
             <form action="{{ route('letter.update', $letter->id) }}" class="card p-4 mt-5 d-flex" method="POST" enctype="multipart/form-data">
                 @csrf
+                @method('PATCH')
                 {{-- Menampilkan error validasi --}}
                 @if ($errors->any())
                     <ul class="alert alert-danger">

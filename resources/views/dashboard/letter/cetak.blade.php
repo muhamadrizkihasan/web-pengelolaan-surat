@@ -116,7 +116,7 @@
         <div class="col-9 mb-4"></div>
         <div class="col-3 mb-4">
             <a href="{{ route('letter.index') }}" class="btn btn-link">Kembali</a>
-            <a href="" class="btn btn-secondary">Cetak Surat</a>
+            <a href="{{ route('letter.download-pdf', $letters->id) }}" class="btn btn-secondary">Cetak Surat</a>
         </div>
     </div>
     <div class="form">
