@@ -39,22 +39,22 @@ composer install
 cp .env.example .env
 ```
 
-2. Database configuration through the `.env` file
+2. Konfigurasi database melalui file `.env`
 
 ```conf
-APP_DEBUG=true
 DB_DATABASE=db_pengelolaan_surat
 ```
 
-3. Migration and symlink
+3. Migrasi and symlink
 
 ```bash
 php artisan key:generate
 php artisan storage:link
-php artisan migrate --seed
+php artisan migrate
+php artisan db:seed
 ```
 
-4. Launch the website
+4. Jalankan website
 
 ```bash
 php artisan serve
@@ -67,7 +67,7 @@ php artisan serve
 -   Email : rizki@gmail.com
 -   Password : staff
 
-### 👨‍🏫Officer
+### 👨‍🏫Guru
 
 -   Email : hasan@gmail.com
 -   Password : guru
