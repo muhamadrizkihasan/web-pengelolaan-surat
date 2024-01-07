@@ -4,42 +4,26 @@ Website tugas sekolah untuk uji kelayakan PKL
 
 <h2 id="fitur">🤨 What features are available in Confess?</h2>
 
--   [Mazer Bootstrap Template](https://github.com/zuramai/mazer)
-    -   Dark and light mode
+-   [Dashboard Admin LTE](https://adminlte.io/)
     -   Dashboard UI
 -   Landing Page
-    -   Homepage
-    -   About
-    -   Confession
-    -   Comment
-    -   Confession's category
+    -   Dashboard
+    -   Data Staff Tata Usaha
+    -   Data Guru
+    -   Data Klasifikasi Surat
+    -   Data Surat
 -   Authentication
-    -   Registration
     -   Login
 -   Multi User
-    -   Admin
-        -   History login, confession, response, and comment statistics (full overview)
-        -   Manageable users
-        -   Manageable confession's categories
-        -   Manageable website informations
-        -   Deactivate their own account
+    -   Staff TU
+        -   Mengelola user (Staff TU dan Guru)
+        -   Mengelola data klasifikasi surat (CRUD)
+        -   Mengelola data surat (CRUD)
     -   Officer
-        -   History login, confession, response, and comment statistics (half overview)
-        -   Handling student's confessions
-    -   Student
-        -   History login, confession, response, and comment statistics (shallow overview)
-        -   Submit confessions
-    -   All
-        -   Comment to a confession on Landing Page
-        -   Account
-        -   Export data
--   Account
-    -   Profile
-    -   Setting
-    -   Change Password
--   Searchable Landing Page
-    -   Confessions
-    -   Confession's categories
+        -   Membuat data hasil rapat
+-   Cari Data
+-   Export PDF
+-   Export Excel
 
 
 <h2 id="installation">💻 Installation</h2>
