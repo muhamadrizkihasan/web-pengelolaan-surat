@@ -41,7 +41,7 @@ cp .env.example .env
 
 ```conf
 APP_DEBUG=true
-DB_DATABASE=db_pengelolaan surat
+DB_DATABASE=db_pengelolaan_surat
 ```
 
 3. Migration and symlink
@@ -57,3 +57,15 @@ php artisan migrate --seed
 ```bash
 php artisan serve
 ```
+
+<h2 id="testing-account">👤 Default account for testing</h2>
+
+### 🧖 Staff Tata Usaha
+
+-   Email : rizki@gmail.com
+-   Password : staff
+
+### 👨‍🏫Officer
+
+-   Email : hasan@gmail.com
+-   Password : guru
