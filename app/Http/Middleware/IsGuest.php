@@ -16,10 +16,10 @@ class IsGuest
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (Auth::check() == false) {
-            return $next($request);
+        if (Auth()->check()) {
+            return redirect()->route('dashboard')->with('failed', 'Kamu Sudah Login!');
         } else {
-            return redirect()->route('login')->with('canAccess', 'Silahkan Login Terlebih Dahulu');
+            return $next($request);
         }
     }
 }

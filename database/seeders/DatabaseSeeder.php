@@ -3,14 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-
-use App\Models\Letter;
-use App\Models\LetterType;
-use App\Models\Result;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Faker\Factory as Faker;
 
 class DatabaseSeeder extends Seeder
 {
@@ -20,7 +15,6 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // \App\Models\User::factory(10)->create();
-
         User::create([
             'name' => 'Rizki',
             'email' => 'rizki@gmail.com',

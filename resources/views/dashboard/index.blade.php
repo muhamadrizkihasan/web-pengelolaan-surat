@@ -4,6 +4,10 @@
     <h1 class="m-0">Dashboard</h1>
     <p><a href="{{ route('dashboard') }}">Home</a> / <a href="{{ route('dashboard') }}">Dashboard</a></p>
 
+    @if (Session::get('failed'))
+        <div class="alert alert-danger">{{ Session::get('failed') }}</div>
+    @endif
+
     @if ((Auth::user()->role == 'guru'))
         <div class="row">
             <div class="col-8">

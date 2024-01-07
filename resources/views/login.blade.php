@@ -1,7 +1,7 @@
 @extends('layouts.template')
 
 @section('content')
-    <h1>Halaman Login!</h1>
+    <h1 class="d-flex justify-content-center">Halaman Login!</h1>
     <form action="{{ route('auth-login') }}" class="card p-4 mt-5" method="POST">
         @csrf
         {{-- Menampilkan error validasi --}}
