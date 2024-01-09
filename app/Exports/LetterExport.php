@@ -35,7 +35,7 @@ class LetterExport implements FromCollection, WithHeadings, WithMapping
             $item->letter_perihal,
             $item->created_at,
             $recipient,
-            'Pak Hasan',
+            $item->user->name,
             $content,
         ];
     }
